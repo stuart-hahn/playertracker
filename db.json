@@ -1,0 +1,19 @@
+{
+  "players": [
+    {
+      "id": 1,
+      "name": "slump",
+      "url": "twitch.tv/slumpcity"
+    },
+    {
+      "id": 2,
+      "name": "antcap24",
+      "url": "twitch.tv/antcap24"
+    },
+    {
+      "id": 3,
+      "name": "rocketz",
+      "url": "muthead.com"
+    }
+  ]
+}

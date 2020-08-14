@@ -1,9 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios'
 import Player from './components/Player'
 
 const App = (props) => {
-  const [players, setPlayers] = useState(props.players)
+  const [players, setPlayers] = useState([])
   const [newPlayer, setNewPlayer] = useState('')
+
+  useEffect(() => {
+    axios
+      .get('http://localhost:3001/players')
+      .then(response => setPlayers(response.data))
+  }, [])
 
   const addPlayer = event => {
     event.preventDefault()
