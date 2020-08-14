@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Player from './components/Player'
 
 const App = (props) => {
   const [players, setPlayers] = useState(props.players)
@@ -22,7 +23,7 @@ const App = (props) => {
     <div>
       <h1>Players</h1>
       <ul>
-        {players.map(player => <li key={player.id}>{player.name}</li>)}
+        {players.map(player => <Player key={player.id} player={player} />)}
       </ul>
       <form onSubmit={addPlayer}>
         <input value={newPlayer} placeholder="create new player" onChange={handlePlayerChange} />
