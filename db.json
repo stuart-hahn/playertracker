@@ -3,17 +3,26 @@
     {
       "id": 1,
       "name": "slump",
-      "url": "twitch.tv/slumpcity"
+      "url": "twitch.tv/slumpcity",
+      "wins": 15,
+      "losses": 1,
+      "titles": 107
     },
     {
       "id": 2,
       "name": "antcap24",
-      "url": "twitch.tv/antcap24"
+      "url": "twitch.tv/antcap24",
+      "wins": 8,
+      "losses": 8,
+      "titles": 4
     },
     {
       "id": 3,
       "name": "rocketz",
-      "url": "muthead.com"
+      "url": "muthead.com",
+      "wins": 8,
+      "losses": 8,
+      "titles": 13
     }
   ]
 }
