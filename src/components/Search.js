@@ -4,7 +4,7 @@ const Search = ({ term, handleTermChange }) => {
   return (
     <div>
       <p>
-        find player
+        <label>Find Player: </label>
         <input type="text" onChange={handleTermChange} value={term} placeholder="search..." />
       </p>
     </div>

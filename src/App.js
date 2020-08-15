@@ -20,11 +20,12 @@ const App = () => {
   }, [])
 
   const handleTermChange = event => setTerm(event.target.value)
+  const setPlayer = player => setTerm(player)
 
   return (
     <div>
       <Search term={term} handleTermChange={handleTermChange} />
-      <Players players={filteredPlayers} />
+      <Players players={filteredPlayers} setPlayer={setPlayer} />
     </div>
   );
 }
