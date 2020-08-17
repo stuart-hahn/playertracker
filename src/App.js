@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+
+import playerServices from './services/players'
 
 import Search from './components/Search'
 import Players from './components/Players'
@@ -15,8 +16,9 @@ const App = () => {
   }
 
   useEffect(() => {
-    axios.get('http://localhost:3001/players')
-      .then(response => setPlayers(response.data))
+    playerServices
+      .getAll()
+      .then(initialPlayers => setPlayers(initialPlayers))
   }, [])
 
   const handleTermChange = event => setTerm(event.target.value)
